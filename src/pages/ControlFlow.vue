@@ -10,10 +10,10 @@
       Executes a block of code only if a certain condition is met (that is, if the result is <code>true</code>).
     </p>
     <pre>
-      <code class="liquid"  v-el:if-input>
-        {% if program.title == 'Awesome movie' %}
-          You are buying awesome movie!
-        {% endif %}
+      <code class="liquid"  v-el:liqud1>
+    {% if program.title == 'Awesome movie' %}
+      You are buying awesome movie!
+    {% endif %}
       </code>
     </pre>
     <hr>
@@ -23,10 +23,10 @@
       (that is, if the result is <code>false</code>).
     </p>
     <pre>
-      <code class="liquid"  v-el:unless-input>
-        {% unless program.title == 'Awesome movie' %}
-          You are not buying awesome movie!
-        {% endunless %}
+      <code class="liquid"  v-el:liqud2>
+    {% unless program.title == 'Awesome movie' %}
+      You are not buying awesome movie!
+    {% endunless %}
       </code>
     </pre>
     <hr>
@@ -35,14 +35,14 @@
       Adds more conditions to an <code>if</code> or <code>unless</code> block.
     </p>
     <pre>
-      <code class="liquid"  v-el:else-input>
-        {% if user.name == 'Tony Stark' %}
-          Stark Industries
-        {% elsif user.name == 'Peter Parker' %}
-          Daily Bugle
-        {% else %}
-          School
-        {% endif %}
+      <code class="liquid"  v-el:liqud3>
+    {% if user.name == 'Tony Stark' %}
+      Stark Industries
+    {% elsif user.name == 'Peter Parker' %}
+      Daily Bugle
+    {% else %}
+      School
+    {% endif %}
       </code>
     </pre>
     <hr>
@@ -57,15 +57,15 @@
       case to provide code to execute if none of the conditions are met.
     </p>
     <pre>
-      <code class="liquid"  v-el:case-input>
-        {% case user.name %}
-          {% when 'Tony Stark' %}
-            Stark Industries
-          {% when 'Peter Parker' %}
-            Daily Bugle
-          {% else %}
-            School
-        {% endcase %}
+      <code class="liquid"  v-el:liqud4>
+    {% case user.name %}
+      {% when 'Tony Stark' %}
+        Stark Industries
+      {% when 'Peter Parker' %}
+        Daily Bugle
+      {% else %}
+        School
+    {% endcase %}
       </code>
     </pre>
     <hr>
@@ -89,10 +89,7 @@
 
   export default {
     ready: function initHighlight() {
-      const codeEls = [
-        'ifInput', 'unlessInput', 'elseInput', 'caseInput',
-      ];
-      highlightCode(this, codeEls);
+      highlightCode(this);
     },
   };
 </script>

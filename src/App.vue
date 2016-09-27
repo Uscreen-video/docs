@@ -31,7 +31,7 @@ export default {
   .main-title {
     margin-top: 0px;
   }
-  p {
+  p, li {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;

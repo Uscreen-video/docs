@@ -7,6 +7,7 @@ import BasicOperators from './pages/BasicOperators';
 import DataTypes from './pages/DataTypes';
 import TrueAndFalse from './pages/TrueAndFalse';
 import ControlFlow from './pages/ControlFlow';
+import IterationTags from './pages/IterationTags';
 
 Vue.use(VueRouter);
 
@@ -28,6 +29,9 @@ router.map({
   },
   '/control-flow': {
     component: ControlFlow,
+  },
+  '/iteration-tags': {
+    component: IterationTags,
   },
 });
 

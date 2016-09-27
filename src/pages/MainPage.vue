@@ -9,10 +9,10 @@
       Tags make up the programming logic that tells templates what to do.
     </p>
     <pre>
-      <code class="liquid"  v-el:tags>
-        {% if store.name == 'My Store' %}
-          Hello Master!
-        {% endif %}
+      <code class="liquid"  v-el:liqud1>
+    {% if store.name == 'My Store' %}
+      Hello Master!
+    {% endif %}
       </code>
     </pre>
     <hr>
@@ -21,8 +21,8 @@
       Objects contain attributes that are used to display dynamic content on a page.
     </p>
     <pre>
-      <code class="liquid" v-el:objects>
-        {{{'{{ program.title }}'}}} &lt;!-- Output: Awesome Program --&gt;
+      <code class="liquid" v-el:liqud2>
+    {{{'{{ program.title }}'}}} &lt;!-- Output: Awesome Program --&gt;
       </code>
     </pre>
 
@@ -32,8 +32,8 @@
       Filters are used to modify the output of strings, numbers, variables, and objects.
     </p>
     <pre>
-      <code class="liquid" v-el:filters>
-        {{{"{{ 'My' | append: ' Profile' }}"}}} &lt;!-- Output: My Profile --&gt;
+      <code class="liquid" v-el:liqud3>
+    {{{"{{ 'My' | append: ' Profile' }}"}}} &lt;!-- Output: My Profile --&gt;
       </code>
     </pre>
   </div>
@@ -44,8 +44,7 @@ import highlightCode from '../helpers/highlightCode';
 
 export default {
   ready: function initHighlight() {
-    const codeEls = ['filters', 'tags', 'objects'];
-    highlightCode(this, codeEls);
+    highlightCode(this);
   },
 };
 </script>

@@ -10,8 +10,8 @@
       Strings are declared by wrapping a variable's value in single or double quotes.
     </p>
     <pre>
-      <code class="liquid" v-el:string>
-        {% assign my_string = "Hello World!" %}
+      <code class="liquid" v-el:liquid1>
+    {% assign my_string = "Hello World!" %}
       </code>
     </pre>
     <hr>
@@ -20,9 +20,9 @@
       Numbers include floats and integers.
     </p>
     <pre>
-      <code class="liquid" v-el:number>
-        {% assign my_int = 25 %}
-        {% assign my_float = 39.756 %}
+      <code class="liquid" v-el:liqud2>
+    {% assign my_int = 25 %}
+    {% assign my_float = 39.756 %}
       </code>
     </pre>
     <hr>
@@ -31,9 +31,9 @@
       Booleans are either <code>true</code> or <code>false</code>. No quotations are necessary when declaring a boolean.
     </p>
     <pre>
-      <code class="liquid" v-el:boolean>
-        {% assign foo = true %}
-        {% assign bar = false %}
+      <code class="liquid" v-el:liqud3>
+    {% assign foo = true %}
+    {% assign bar = false %}
       </code>
     </pre>
     <hr>
@@ -46,22 +46,22 @@
       In the following example, if a user does not exist (that is, user returns nil), Liquid will not print the user name:
     </p>
     <pre>
-      <code class="liquid" v-el:nil-if>
-        {% if user %}
-          {{{'{{ user.name }}'}}}
-        {% endif %}
+      <code class="liquid" v-el:liqud4>
+    {% if user %}
+      {{{'{{ user.name }}'}}}
+    {% endif %}
       </code>
     </pre>
     <p>
       Tags or outputs that return <code>nil</code> will not print anything to the page.
     </p>
     <pre>
-      <code class="liquid" v-el:nil-text>
-        {% assign title = nil %}
-        Some Title: {{{'{{ title }}'}}}
+      <code class="liquid" v-el:liqud5>
+    {% assign title = nil %}
+    Some Title: {{{'{{ title }}'}}}
       </code>
-      <code class="liquid" v-el:nil-output>
-        Some Title:
+      <code class="liquid" v-el:liqud6>
+    Some Title:
       </code>
     </pre>
     <hr>
@@ -73,27 +73,27 @@
       To access all of the items in an array, you can loop through each item in the array using a for or tablerow tag.
     </p>
     <pre>
-      <code class="liquid" v-el:array-for>
-        {% for tag in program.tags %}
-          {{{'{{ tag }}'}}}
-        {% endfor %}
+      <code class="liquid" v-el:liqud7>
+    {% for tag in program.tags %}
+      {{{'{{ tag }}'}}}
+    {% endfor %}
       </code>
-      <code class="liquid" v-el:array-output>
-        movies drama
+      <code class="liquid" v-el:liqud8>
+    movies drama
       </code>
     </pre>
     <p>
       You can use square bracket <code>[ ]</code> notation to access a specific item in an array. Array indexing starts at zero.
     </p>
     <pre>
-      <code class="liquid" v-el:array-pick>
-        &lt;!-- if program.tags = "movies", "drama" --&gt;
-        {{{'{{ program.tags[0] }}'}}}
-        {{{'{{ program.tags[1] }}'}}}
+      <code class="liquid" v-el:liqud9>
+    &lt;!-- if program.tags = "movies", "drama" --&gt;
+    {{{'{{ program.tags[0] }}'}}}
+    {{{'{{ program.tags[1] }}'}}}
       </code>
-      <code class="liquid" v-el:array-pick-output>
-        movies
-        drama
+      <code class="liquid" v-el:liqud10>
+    movies
+    drama
       </code>
     </pre>
     <p>
@@ -109,11 +109,7 @@ import highlightCode from '../helpers/highlightCode';
 
 export default {
   ready: function initHighlight() {
-    const codeEls = ['string', 'number',
-      'boolean', 'nilText', 'nilOutput', 'arrayFor', 'arrayOutput',
-      'arrayPick', 'arrayPickOutput',
-      'nilIf'];
-    highlightCode(this, codeEls);
+    highlightCode(this);
   },
 };
 </script>

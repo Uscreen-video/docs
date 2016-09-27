@@ -62,32 +62,35 @@
     </p>
     <pre>
       <code class="liquid" v-el:complex-check>
-        {% if user and request %}
-          Welcome back!
+        {% if user and user.name == 'Tony Stark' %}
+          Welcome back IronMan!
         {% endif %}
       </code>
     </pre>
     <hr>
-    <h2>Objects</h2>
+    <h2>contains</h2>
     <p>
-      Objects contain attributes that are used to display dynamic content on a page.
-    </p>
-    <pre v-el:objects>
-      <code class="liquid">
-        {{{'{{ program.title }}'}}} &lt;!-- Output: Awesome Program --&gt;
-      </code>
-    </pre>
-    <hr>
-    <h2>Filters</h2>
-    <p>
-      Filters are used to modify the output of strings, numbers, variables, and objects.
+      <code>contains</code> checks for the presence of a substring in a string.
     </p>
     <pre>
-      <code class="liquid" v-el:filters>
-        {{{"{{ 'My' | append: ' Profile' }}"}}} &lt;!-- Output: My Profile --&gt;
+      <code class="liquid" v-el:contains>
+        {% if user and user.name contains 'Parker' %}
+          Hello Peter!
+        {% endif %}
       </code>
     </pre>
-    <hr>
+    <p>
+      With this you can also search inside array of strings.
+      <br>
+      <b>Warning!</b> You cannot use it to check for an object in an array of objects.
+    </p>
+    <pre>
+      <code class="liquid" v-el:contains-array>
+        {% program.tags contains 'movie' %}
+          Watch your favorite movie!
+        {% endif %}
+      </code>
+    </pre>
   </div>
 </template>
 
@@ -96,7 +99,8 @@
 
   export default {
     ready: function initHighlight() {
-      const codeEls = ['userCheck', 'complexCheck'];
+      const codeEls = ['userCheck', 'complexCheck',
+        'contains', 'containsArray'];
       highlightCode(this, codeEls);
     },
   };

@@ -6,6 +6,7 @@
         <li><a class='menu--link' v-link="{ path: '/', exact: true }">Start with Liquid</a></li>
         <li><a class='menu--link' v-link="{ path: '/operators' }">Operators</a></li>
         <li><a class='menu--link' v-link="{ path: '/data-types' }">Data types</a></li>
+        <li><a class='menu--link' v-link="{ path: '/true-and-false' }">Truthy and falsy</a></li>
       </ul>
       <h4>Tags</h4>
     </div>

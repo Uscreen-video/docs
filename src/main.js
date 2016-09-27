@@ -1,9 +1,11 @@
 import Vue from 'vue';
 import App from './App';
 import VueRouter from 'vue-router';
+
 import MainPage from './pages/MainPage';
 import BasicOperators from './pages/BasicOperators';
 import DataTypes from './pages/DataTypes';
+import TrueAndFalse from './pages/TrueAndFalse';
 
 Vue.use(VueRouter);
 
@@ -19,6 +21,9 @@ router.map({
   },
   '/data-types': {
     component: DataTypes,
+  },
+  '/true-and-false': {
+    component: TrueAndFalse,
   },
 });
 

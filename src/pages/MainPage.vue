@@ -36,7 +36,6 @@
         {{{"{{ 'My' | append: ' Profile' }}"}}} &lt;!-- Output: My Profile --&gt;
       </code>
     </pre>
-    <hr>
   </div>
 </template>
 

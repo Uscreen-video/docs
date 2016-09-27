@@ -50,7 +50,6 @@
     <p>
       The only values that are falsy in Liquid are <code>nil</code> and <code>false</code>.
     </p>
-    <hr>
   </div>
 </template>
 

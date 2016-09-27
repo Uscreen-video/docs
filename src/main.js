@@ -6,6 +6,7 @@ import MainPage from './pages/MainPage';
 import BasicOperators from './pages/BasicOperators';
 import DataTypes from './pages/DataTypes';
 import TrueAndFalse from './pages/TrueAndFalse';
+import ControlFlow from './pages/ControlFlow';
 
 Vue.use(VueRouter);
 
@@ -24,6 +25,9 @@ router.map({
   },
   '/true-and-false': {
     component: TrueAndFalse,
+  },
+  '/control-flow': {
+    component: ControlFlow,
   },
 });
 

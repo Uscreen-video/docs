@@ -21,7 +21,7 @@ export default {
 
 <style>
   @import 'https://fonts.googleapis.com/css?family=Roboto:100,400,900';
-  @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+  @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
 
   html, body {
     font-family: 'Roboto', sans-serif;

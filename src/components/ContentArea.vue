@@ -9,6 +9,9 @@
         <li><a class='menu--link' v-link="{ path: '/true-and-false' }">Truthy and falsy</a></li>
       </ul>
       <h4>Tags</h4>
+      <ul class="menu">
+        <li><a class='menu--link' v-link="{ path: '/control-flow' }">Control flow tags</a></li>
+      </ul>
     </div>
     <div class="content">
       <router-view></router-view>

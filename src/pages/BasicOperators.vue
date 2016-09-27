@@ -1,7 +1,7 @@
 <template lang="">
   <div class="article">
     <h1 class="main-title">Logical and comparison operators</h1>
-    <p>Liquid has access to many logical and comparison operators. You can use operators to create logic with <a  v-link="{ path: '/control-flow' }">control flow</a> tags.</p>
+    <p>Liquid has access to many logical and comparison operators. You can use operators to create logic with control flow tags.</p>
     <hr>
     <h2>Basic operators</h2>
     <table>

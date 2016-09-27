@@ -3,6 +3,7 @@ import App from './App';
 import VueRouter from 'vue-router';
 import MainPage from './pages/MainPage';
 import BasicOperators from './pages/BasicOperators';
+import DataTypes from './pages/DataTypes';
 
 Vue.use(VueRouter);
 
@@ -13,8 +14,11 @@ router.map({
   '/': {
     component: MainPage,
   },
-  '/basic-operators': {
+  '/operators': {
     component: BasicOperators,
+  },
+  '/data-types': {
+    component: DataTypes,
   },
 });
 

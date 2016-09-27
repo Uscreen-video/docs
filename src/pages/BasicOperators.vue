@@ -91,6 +91,18 @@
         {% endif %}
       </code>
     </pre>
+    <hr>
+    <h2>Order of operations</h2>
+    <p>In tags with more than one <code>and</code> or <code>or</code> operator, all <code>and</code> operators are evaluated first,
+       and then <code>or</code> operators are evaluated. You cannot change the order of operations using parentheses.
+       Parentheses are invalid characters in Liquid tags and will prevent your tags from working.</p>
+    <pre>
+      <code class="liquid" v-el:operations>
+        {% if true or false and false %}
+          This evaluates to true, since the 'and' condition is checked first.
+        {% endif %}
+      </code>
+    </pre>
   </div>
 </template>
 
@@ -100,7 +112,8 @@
   export default {
     ready: function initHighlight() {
       const codeEls = ['userCheck', 'complexCheck',
-        'contains', 'containsArray'];
+        'contains', 'operations',
+        'containsArray'];
       highlightCode(this, codeEls);
     },
   };

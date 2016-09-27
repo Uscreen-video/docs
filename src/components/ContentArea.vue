@@ -4,7 +4,8 @@
       <h4>Introduction</h4>
       <ul class="menu">
         <li><a class='menu--link' v-link="{ path: '/', exact: true }">Start with Liquid</a></li>
-        <li><a class='menu--link' v-link="{ path: '/basic-operators' }">Operators</a></li>
+        <li><a class='menu--link' v-link="{ path: '/operators' }">Operators</a></li>
+        <li><a class='menu--link' v-link="{ path: '/data-types' }">Data types</a></li>
       </ul>
       <h4>Tags</h4>
     </div>
@@ -29,6 +30,7 @@
     margin: 0px;
     padding: 45px;
     width: 20%;
+    min-height: 100vh;
     max-width: 200px;
   }
 

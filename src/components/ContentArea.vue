@@ -1,0 +1,63 @@
+<template lang="">
+  <div class="container">
+    <div class="sidebar">
+      <h4>Introduction</h4>
+      <ul class="menu">
+        <li><a class='menu--link' v-link="{ path: '/', exact: true }">Start with Liquid</a></li>
+        <li><a class='menu--link' v-link="{ path: '/basic-operators' }">Operators</a></li>
+      </ul>
+      <h4>Tags</h4>
+    </div>
+    <div class="content">
+      <router-view></router-view>
+    </div>
+  </div>
+</template>
+
+<script lang=""></script>
+
+<style lang="" scoped>
+  .container {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .sidebar {
+    /*background-color: #f4f8fb;*/
+    background: linear-gradient(#f4f8fb, #dbedf8);
+    border-right: 1px solid #dbedf8;
+    margin: 0px;
+    padding: 45px;
+    width: 20%;
+    max-width: 200px;
+  }
+
+  .sidebar h4 {
+    color: #8e8e8e;
+    font-weight: 100;
+    font-size: 12px;
+    margin-top: 0px;
+    text-transform: uppercase;
+  }
+
+  .content {
+    width: 80%;
+    padding: 45px;
+    max-width: 900px;
+  }
+
+  .menu {
+    list-style-type: none;
+    list-style: none;
+    padding: 0px;
+  }
+
+  .menu li {
+    margin-bottom: 5px;
+  }
+
+  .menu--link.active {
+    color: #1582eb;
+    font-weight: 600;
+  }
+</style>

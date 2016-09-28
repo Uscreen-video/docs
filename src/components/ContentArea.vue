@@ -18,7 +18,13 @@
       <h4>Filters</h4>
       <ul class="menu">
         <li><a class='menu--link' v-link="{ path: '/money-filters' }">Money filters</a></li>
+        <li><a class='menu--link' v-link="{ path: '/array-filters' }">Array filters</a></li>
+        <li><a class='menu--link' v-link="{ path: '/html-filters' }">HTML filters</a></li>
+        <li><a class='menu--link' v-link="{ path: '/math-filters' }">Math filters</a></li>
+        <li><a class='menu--link' v-link="{ path: '/string-filters' }">String filters</a></li>
+        <li><a class='menu--link' v-link="{ path: '/video-filters' }">Video filters</a></li>
       </ul>
+      <h4>Objects</h4>
     </div>
     <div class="content">
       <router-view></router-view>

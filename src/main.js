@@ -11,6 +11,11 @@ import IterationTags from './pages/IterationTags';
 import ThemeTags from './pages/ThemeTags';
 import VariableTags from './pages/VariableTags';
 import MoneyFilters from './pages/MoneyFilters';
+import ArrayFilters from './pages/ArrayFilters';
+import HtmlFilters from './pages/HtmlFilters';
+import MathFilters from './pages/MathFilters';
+import StringFilters from './pages/StringFilters';
+import VideoFilters from './pages/VideoFilters';
 
 Vue.use(VueRouter);
 
@@ -44,6 +49,21 @@ router.map({
   },
   '/money-filters': {
     component: MoneyFilters,
+  },
+  '/array-filters': {
+    component: ArrayFilters,
+  },
+  '/html-filters': {
+    component: HtmlFilters,
+  },
+  '/math-filters': {
+    component: MathFilters,
+  },
+  '/string-filters': {
+    component: StringFilters,
+  },
+  '/video-filters': {
+    component: VideoFilters,
   },
 });
 

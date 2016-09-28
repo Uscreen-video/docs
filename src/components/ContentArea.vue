@@ -15,6 +15,10 @@
         <li><a class='menu--link' v-link="{ path: '/theme-tags' }">Theme tags</a></li>
         <li><a class='menu--link' v-link="{ path: '/variable-tags' }">Variable tags</a></li>
       </ul>
+      <h4>Filters</h4>
+      <ul class="menu">
+        <li><a class='menu--link' v-link="{ path: '/money-filters' }">Money filters</a></li>
+      </ul>
     </div>
     <div class="content">
       <router-view></router-view>
@@ -63,6 +67,10 @@
 
   .menu li {
     margin-bottom: 5px;
+  }
+
+  .menu li:last-child {
+    margin-bottom: 35px;
   }
 
   .menu--link.active {

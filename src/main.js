@@ -10,6 +10,7 @@ import ControlFlow from './pages/ControlFlow';
 import IterationTags from './pages/IterationTags';
 import ThemeTags from './pages/ThemeTags';
 import VariableTags from './pages/VariableTags';
+import MoneyFilters from './pages/MoneyFilters';
 
 Vue.use(VueRouter);
 
@@ -40,6 +41,9 @@ router.map({
   },
   '/variable-tags': {
     component: VariableTags,
+  },
+  '/money-filters': {
+    component: MoneyFilters,
   },
 });
 

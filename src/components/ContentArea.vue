@@ -12,6 +12,7 @@
       <ul class="menu">
         <li><a class='menu--link' v-link="{ path: '/control-flow' }">Control flow tags</a></li>
         <li><a class='menu--link' v-link="{ path: '/iteration-tags' }">Iteration tags</a></li>
+        <li><a class='menu--link' v-link="{ path: '/theme-tags' }">Theme tags</a></li>
       </ul>
     </div>
     <div class="content">

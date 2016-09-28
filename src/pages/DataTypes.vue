@@ -60,7 +60,7 @@
     {% assign title = nil %}
     Some Title: {{{'{{ title }}'}}}
       </code>
-      <code class="liquid" v-el:liqud6>
+      <code class="html" v-el:liqud6>
     Some Title:
       </code>
     </pre>
@@ -78,7 +78,7 @@
       {{{'{{ tag }}'}}}
     {% endfor %}
       </code>
-      <code class="liquid" v-el:liqud8>
+      <code class="html" v-el:liqud8>
     movies drama
       </code>
     </pre>
@@ -91,7 +91,7 @@
     {{{'{{ program.tags[0] }}'}}}
     {{{'{{ program.tags[1] }}'}}}
       </code>
-      <code class="liquid" v-el:liqud10>
+      <code class="html" v-el:liqud10>
     movies
     drama
       </code>

@@ -8,6 +8,7 @@ import DataTypes from './pages/DataTypes';
 import TrueAndFalse from './pages/TrueAndFalse';
 import ControlFlow from './pages/ControlFlow';
 import IterationTags from './pages/IterationTags';
+import ThemeTags from './pages/ThemeTags';
 
 Vue.use(VueRouter);
 
@@ -32,6 +33,9 @@ router.map({
   },
   '/iteration-tags': {
     component: IterationTags,
+  },
+  '/theme-tags': {
+    component: ThemeTags,
   },
 });
 

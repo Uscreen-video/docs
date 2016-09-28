@@ -48,7 +48,7 @@
       {% endif %}
     {% endfor %}
       </code>
-      <codee class="liquid" v-el:liqud4>
+      <code class="html" v-el:liqud4>
     1 2 3
       </code>
     </pre>
@@ -66,7 +66,7 @@
       {% endif %}
     {% endfor %}
       </code>
-      <codee class="liquid" v-el:liqud6>
+      <codee class="html" v-el:liqud6>
     1 2 3  5
       </code>
     </pre>
@@ -82,7 +82,7 @@
       {{{'{{ item }}'}}}
     {% endfor %}
       </code>
-      <codee class="liquid" v-el:liqudt8>
+      <codee class="html" v-el:liqudt8>
     1 2
       </code>
     </pre>
@@ -97,7 +97,7 @@
       {{{'{{ item }}'}}}
     {% endfor %}
       </code>
-      <codee class="liquid" v-el:liqud10>
+      <code class="html" v-el:liqud10>
     3 4 5 6
       </code>
     </pre>
@@ -116,7 +116,7 @@
       {{{'{{ i }}'}}}
     {% endfor %}
       </code>
-      <codee class="liquid" v-el:liqud12>
+      <code class="html" v-el:liqud12>
     1 2 3 4
     3 4 5
       </code>
@@ -132,7 +132,7 @@
       {{{'{{ item }}'}}}
     {% endfor %}
       </code>
-      <code class="liquid"  v-el:liqud14>
+      <code class="html"  v-el:liqud14>
     6 5 4 3 2 1
       </code>
     </pre>
@@ -150,7 +150,7 @@
     {% cycle 'one', 'two', 'three' %}
     {% cycle 'one', 'two', 'three' %}
       </code>
-      <code class="liquid"  v-el:liqud16>
+      <code class="html"  v-el:liqud16>
     one
     two
     three

@@ -9,6 +9,7 @@ import TrueAndFalse from './pages/TrueAndFalse';
 import ControlFlow from './pages/ControlFlow';
 import IterationTags from './pages/IterationTags';
 import ThemeTags from './pages/ThemeTags';
+import VariableTags from './pages/VariableTags';
 
 Vue.use(VueRouter);
 
@@ -36,6 +37,9 @@ router.map({
   },
   '/theme-tags': {
     component: ThemeTags,
+  },
+  '/variable-tags': {
+    component: VariableTags,
   },
 });
 

@@ -110,6 +110,63 @@
     {% endpaginate %}
       </code>
     </pre>
+    <hr>
+    <h2>theme_header_tag</h2>
+    <p>
+      This tag represents Platform system code. If you want workable integrations,
+      you must to make sure that this tag presented in your <b>theme.liquid</b> file inisde <code>header</code> HTML tag.
+    </p>
+    <pre>
+      <code class="liquid"  v-el:lique10>
+    &lt;header>
+      &lt;!-- other header code -->
+      {% theme_header_tag %}
+      &lt;!-- other header code -->
+    &lt;/header>
+      </code>
+    </pre>
+    <hr>
+    <h2>csrf_meta_tags</h2>
+    <p>
+      This tag represents Platform system code. This code provides security token and
+      opportunity to send POST/PUT/DELETE requests on button click,
+      you must to make sure that this tag presented in your <b>theme.liquid</b> file inisde <code>header</code> HTML tag.
+    </p>
+    <pre>
+      <code class="liquid"  v-el:lique11>
+    &lt;header>
+      &lt;!-- other header code -->
+      {% csrf_meta_tags %}
+      &lt;!-- other header code -->
+    &lt;/header>
+      </code>
+    </pre>
+    <hr>
+    <h2>theme_program_tag</h2>
+    <p>
+      This tag represents Platform system code. If you want workable integrations,
+      you must to make sure that this tag presented in your <b>program.liquid</b> file after player.
+    </p>
+    <pre>
+      <code class="liquid"  v-el:lique12>
+    {% theme_program_tag %}
+      </code>
+    </pre>
+    <hr>
+    <h2>theme_footer_tag</h2>
+    <p>
+      This tag represents Platform system code. If you want workable integrations,
+      you must to make sure that this tag presented in your <b>theme.liquid</b> file inisde <code>footer</code> HTML tag.
+    </p>
+    <pre>
+      <code class="liquid"  v-el:lique13>
+    &lt;footer>
+      &lt;!-- other footer code -->
+      {% theme_footer_tag %}
+      &lt;!-- other footer code -->
+    &lt;/footer>
+      </code>
+    </pre>
   </div>
 </template>
 

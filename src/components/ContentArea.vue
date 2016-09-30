@@ -22,7 +22,7 @@
         <li><a class='menu--link' v-link="{ path: '/html-filters' }">HTML filters</a></li>
         <li><a class='menu--link' v-link="{ path: '/math-filters' }">Math filters</a></li>
         <li><a class='menu--link' v-link="{ path: '/string-filters' }">String filters</a></li>
-        <li><a class='menu--link' v-link="{ path: '/video-filters' }">Video filters</a></li>
+        <li><a class='menu--link' v-link="{ path: '/player-filters' }">Player filters</a></li>
       </ul>
       <h4>Objects</h4>
     </div>

@@ -3,6 +3,30 @@
     <h1 class="main-title">HTML Filters</h1>
     <p>HTML filters wrap assets in HTML tags.
     <hr>
+    <h2>get_access_link</h2>
+    <p>
+      This filter allows you to create a link to the right offer.
+      As additional params, you can set HTML <code>class</code> attribute,
+      button <code>title</code> and <code>show_price</code>
+      in case if you have only one offer, by default <code>show_price</code> eq to <code>true</code>.
+      Link showing only if a user doesn't have access to the current program.
+      You can use it with a special offer.
+    </p>
+    <pre>
+      <code class="liquid"  v-el:liqud8>
+    {{{'{{ offer | get_access_link, title: "Subscribe", class: "button-offer" }}'}}}
+      </code>
+    </pre>
+    <p>
+      Or you can send a collection
+     of offers to get a choose offer page.
+    </p>
+    <pre>
+      <code class="liquid"  v-el:liqud9>
+    {{{'{{ program.fixed_price_offers | get_access_link, title: "Buy", class: "button-offer" }}'}}}
+      </code>
+    </pre>
+    <hr>
     <h2>image_tag</h2>
     <p>
       Generates an image tag.
@@ -46,6 +70,17 @@
       </code>
     </pre>
     <hr>
+    <h2>link_to</h2>
+    <p>
+      Generates an HTML link. The first parameter is the URL of the link,
+      and the optional second parameter is the title of the link.
+    </p>
+    <pre>
+      <code class="liquid"  v-el:liqud10>
+    {{{'{{ "Store" | link_to: "https://www.my-store.com","A link to Fancy Store" }}'}}}
+      </code>
+    </pre>
+    <hr>
     <h2>stylesheet_tag</h2>
     <p>
       Generates a stylesheet tag.
@@ -64,30 +99,6 @@
     <pre>
       <code class="liquid"  v-el:liqud7>
     {{{'{{ "//cdn.css.net/1.5.9/slick.css" | stylesheet_tag }}'}}}
-      </code>
-    </pre>
-    <hr>
-    <h2>get_access_link</h2>
-    <p>
-      This tag allows you to create a link to the right offer.
-      As additional params, you can set HTML <code>class</code> attribute,
-      button <code>title</code> and <code>show_price</code>
-      in case if you have only one offer, by default <code>show_price</code> eq to <code>true</code>.
-      Link showing only if a user doesn't have access to the current program.
-      You can use it with a special offer.
-    </p>
-    <pre>
-      <code class="liquid"  v-el:liqud8>
-    {{{'{{ offer | get_access_link, title: "Subscribe", class: "button-offer" }}'}}}
-      </code>
-    </pre>
-    <p>
-      Or you can send a collection
-     of offers to get a choose offer page.
-    </p>
-    <pre>
-      <code class="liquid"  v-el:liqud9>
-    {{{'{{ program.fixed_price_offers | get_access_link, title: "Buy", class: "button-offer" }}'}}}
       </code>
     </pre>
   </div>

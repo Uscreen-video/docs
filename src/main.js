@@ -15,7 +15,7 @@ import ArrayFilters from './pages/ArrayFilters';
 import HtmlFilters from './pages/HtmlFilters';
 import MathFilters from './pages/MathFilters';
 import StringFilters from './pages/StringFilters';
-import VideoFilters from './pages/VideoFilters';
+import PlayerFilters from './pages/PlayerFilters';
 
 Vue.use(VueRouter);
 
@@ -62,8 +62,8 @@ router.map({
   '/string-filters': {
     component: StringFilters,
   },
-  '/video-filters': {
-    component: VideoFilters,
+  '/player-filters': {
+    component: PlayerFilters,
   },
 });
 

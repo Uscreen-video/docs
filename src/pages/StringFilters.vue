@@ -147,7 +147,7 @@
     <h2>spoiler</h2>
     <p>
       Truncates a string down to the number of characters passed as the first
-      parameter and strip HTML tags (only permited are <b>br</b>, <b>b</b>).
+      parameter and strip HTML tags (only permitted are <b>br</b>, <b>b</b>).
       An escape by default is <code>...</code> is appended to the truncated
       string and is included in the character count, but you can setup a custom escape.
     </p>

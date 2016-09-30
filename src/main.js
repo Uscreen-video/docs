@@ -16,12 +16,32 @@ import HtmlFilters from './pages/HtmlFilters';
 import MathFilters from './pages/MathFilters';
 import StringFilters from './pages/StringFilters';
 import PlayerFilters from './pages/PlayerFilters';
+import ObjectsIntroduction from './pages/ObjectsIntroduction';
+import CatalogDrop from './pages/CatalogDrop';
+import CategoryDrop from './pages/CategoryDrop';
+import ElasticSearchDrop from './pages/ElasticSearchDrop';
+import ImageDrop from './pages/ImageDrop';
+import NavigationDrop from './pages/NavigationDrop';
+import NavigationLinkDrop from './pages/NavigationLinkDrop';
+import OfferDrop from './pages/OfferDrop';
+import PageDrop from './pages/PageDrop';
+import ContentDrop from './pages/ContentDrop';
+import RequestDrop from './pages/RequestDrop';
+import SettingsDrop from './pages/SettingsDrop';
+import StoreDrop from './pages/StoreDrop';
+import UserDrop from './pages/UserDrop';
 
 Vue.use(VueRouter);
 
 const router = new VueRouter({
   linkActiveClass: 'active',
 });
+
+router.beforeEach((transition) => {
+  window.scrollTo(0, 0);
+  transition.next();
+});
+
 router.map({
   '/': {
     component: MainPage,
@@ -64,6 +84,48 @@ router.map({
   },
   '/player-filters': {
     component: PlayerFilters,
+  },
+  '/objects-introduction': {
+    component: ObjectsIntroduction,
+  },
+  '/catalog': {
+    component: CatalogDrop,
+  },
+  '/category': {
+    component: CategoryDrop,
+  },
+  '/search': {
+    component: ElasticSearchDrop,
+  },
+  '/image': {
+    component: ImageDrop,
+  },
+  '/nav': {
+    component: NavigationDrop,
+  },
+  '/nav-link': {
+    component: NavigationLinkDrop,
+  },
+  '/offer': {
+    component: OfferDrop,
+  },
+  '/page': {
+    component: PageDrop,
+  },
+  '/program': {
+    component: ContentDrop,
+  },
+  '/request': {
+    component: RequestDrop,
+  },
+  '/settings': {
+    component: SettingsDrop,
+  },
+  '/store': {
+    component: StoreDrop,
+  },
+  '/user': {
+    component: UserDrop,
   },
 });
 

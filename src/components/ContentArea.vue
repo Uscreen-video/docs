@@ -25,6 +25,22 @@
         <li><a class='menu--link' v-link="{ path: '/player-filters' }">Player filters</a></li>
       </ul>
       <h4>Objects</h4>
+      <ul class="menu">
+        <li><a class='menu--link' v-link="{ path: '/objects-introduction' }">Introduction</a></li>
+        <li><a class='menu--link' v-link="{ path: '/catalog' }">Catalog</a></li>
+        <li><a class='menu--link' v-link="{ path: '/category' }">Category</a></li>
+        <li><a class='menu--link' v-link="{ path: '/search' }">Elastic Search</a></li>
+        <li><a class='menu--link' v-link="{ path: '/image' }">Image</a></li>
+        <li><a class='menu--link' v-link="{ path: '/nav', exact: true }">Navigation</a></li>
+        <li><a class='menu--link' v-link="{ path: '/nav-link' }">Navigation Link</a></li>
+        <li><a class='menu--link' v-link="{ path: '/offer' }">Offer</a></li>
+        <li><a class='menu--link' v-link="{ path: '/page' }">Page</a></li>
+        <li><a class='menu--link' v-link="{ path: '/program' }">Program</a></li>
+        <li><a class='menu--link' v-link="{ path: '/request' }">Request</a></li>
+        <li><a class='menu--link' v-link="{ path: '/settings' }">Settings</a></li>
+        <li><a class='menu--link' v-link="{ path: '/store' }">Store</a></li>
+        <li><a class='menu--link' v-link="{ path: '/user' }">User</a></li>
+      </ul>
     </div>
     <div class="content">
       <router-view></router-view>

@@ -66,6 +66,30 @@
     {{{'{{ "//cdn.css.net/1.5.9/slick.css" | stylesheet_tag }}'}}}
       </code>
     </pre>
+    <hr>
+    <h2>get_access_link</h2>
+    <p>
+      This tag allows you to create a link to the right offer.
+      As additional params, you can set HTML <code>class</code> attribute,
+      button <code>title</code> and <code>show_price</code>
+      in case if you have only one offer, by default <code>show_price</code> eq to <code>true</code>.
+      Link showing only if a user doesn't have access to the current program.
+      You can use it with a special offer.
+    </p>
+    <pre>
+      <code class="liquid"  v-el:liqud8>
+    {{{'{{ offer | get_access_link, title: "Subscribe", class: "button-offer" }}'}}}
+      </code>
+    </pre>
+    <p>
+      Or you can send a collection
+     of offers to get a choose offer page.
+    </p>
+    <pre>
+      <code class="liquid"  v-el:liqud9>
+    {{{'{{ program.fixed_price_offers | get_access_link, title: "Buy", class: "button-offer" }}'}}}
+      </code>
+    </pre>
   </div>
 </template>
 

@@ -36,6 +36,7 @@ export default {
     font-weight: 400;
     font-size: 14px;
     color: #444;
+    line-height: 1.9;
   }
   hr {
     border: none;

@@ -13,6 +13,10 @@
     <p>
       Link target. Use this as HTML <b>target</b> attribute.
     </p>
+    <h4>signed_users_only</h4>
+    <p>
+      Show only for signed users.
+    </p>
   </div>
 </template>
 

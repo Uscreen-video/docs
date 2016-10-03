@@ -81,6 +81,16 @@
       </code>
     </pre>
     <hr>
+    <h2>navigation_link</h2>
+    <p>
+      Generates an HTML link for navigation. Automaticly determinate if link need to be hided.
+    </p>
+    <pre>
+      <code class="liquid"  v-el:liqud11>
+    {{{'{{ link | navigation_link, class: "nav-link", active_class: "active", style: "margin-left: 5px;" }}'}}}
+      </code>
+    </pre>
+    <hr>
     <h2>stylesheet_tag</h2>
     <p>
       Generates a stylesheet tag.

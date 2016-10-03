@@ -19,6 +19,10 @@
     <p>
       Store full url.
     </p>
+    <h4>authors</h4>
+    <p>
+      Store all authors list.
+    </p>
     <h4>pages</h4>
     <p>
       Store all pages list.

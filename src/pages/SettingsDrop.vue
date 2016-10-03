@@ -9,7 +9,7 @@
     </p>
     <pre>
       <code class="liquid"  v-el:liqud1>
-    {{{'{{ settings.data["colors"]["main_color"] }}'}}}
+    {{{'{{ settings.data.colors.main_color }}'}}}
       </code>
     </pre>
   </div>

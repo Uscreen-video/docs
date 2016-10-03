@@ -49,6 +49,10 @@
     <p>
       Program categories list.
     </p>
+    <h4>authors</h4>
+    <p>
+      Program all authors list.
+    </p>
     <h4>offers</h4>
     <p>
       Program all offers list.

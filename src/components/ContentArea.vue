@@ -27,6 +27,7 @@
       <h4>Objects</h4>
       <ul class="menu">
         <li><a class='menu--link' v-link="{ path: '/objects-introduction' }">Introduction</a></li>
+        <li><a class='menu--link' v-link="{ path: '/author' }">Author</a></li>
         <li><a class='menu--link' v-link="{ path: '/catalog' }">Catalog</a></li>
         <li><a class='menu--link' v-link="{ path: '/category' }">Category</a></li>
         <li><a class='menu--link' v-link="{ path: '/search' }">Elastic Search</a></li>

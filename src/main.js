@@ -31,6 +31,7 @@ import SettingsDrop from './pages/SettingsDrop';
 import StoreDrop from './pages/StoreDrop';
 import UserDrop from './pages/UserDrop';
 import SearchItemDrop from './pages/SearchItemDrop';
+import AuthorDrop from './pages/AuthorDrop';
 
 Vue.use(VueRouter);
 
@@ -88,6 +89,9 @@ router.map({
   },
   '/objects-introduction': {
     component: ObjectsIntroduction,
+  },
+  '/author': {
+    component: AuthorDrop,
   },
   '/catalog': {
     component: CatalogDrop,

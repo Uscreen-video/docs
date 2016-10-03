@@ -66,6 +66,20 @@
     <p>
       Some Liquid objects are only used in specific circumstances.
     </p>
+    <h4>author</h4>
+    <p>
+      This object only availible as global inside <code>author.liquid</code>,
+      when you open a author page. For example: `/authors/john`.
+      You can use it with any attribute from category object.
+      <br><a v-link="{ path: '/author' }">Reference to object</a>
+    </p>
+    <h4>category</h4>
+    <p>
+      This object only availible as global inside <code>category.liquid</code>,
+      when you open a category page. For example: `/categories/my-category`.
+      You can use it with any attribute from category object.
+      <br><a v-link="{ path: '/category' }">Reference to object</a>
+    </p>
     <h4>content_for_layout</h4>
     <p>
       The <code>content_for_layout</code> object is required in <code>theme.liquid</code>.

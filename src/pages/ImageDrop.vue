@@ -1,17 +1,18 @@
 <template lang="">
   <div class="article">
-    <h1 class="main-title">Player Filters</h1>
-    <p>These filters allow you to show your player menu and embed them to site easily.</p>
-    <hr>
-    <h2>show_player</h2>
+    <h1 class="main-title">Image</h1>
+    <h4>small</h4>
     <p>
-      This filter allows you to easily load player in a page.
+      Small format image.
     </p>
-    <pre>
-      <code class="liquid"  v-el:liqud1>
-    {{{'{{ program | show_player }}'}}}
-      </code>
-    </pre>
+    <h4>big</h4>
+    <p>
+      Big format image.
+    </p>
+    <h4>original</h4>
+    <p>
+      Original format image.
+    </p>
   </div>
 </template>
 

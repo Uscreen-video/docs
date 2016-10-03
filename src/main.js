@@ -30,6 +30,7 @@ import RequestDrop from './pages/RequestDrop';
 import SettingsDrop from './pages/SettingsDrop';
 import StoreDrop from './pages/StoreDrop';
 import UserDrop from './pages/UserDrop';
+import SearchItemDrop from './pages/SearchItemDrop';
 
 Vue.use(VueRouter);
 
@@ -96,6 +97,9 @@ router.map({
   },
   '/search': {
     component: ElasticSearchDrop,
+  },
+  '/search-item': {
+    component: SearchItemDrop,
   },
   '/image': {
     component: ImageDrop,

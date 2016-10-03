@@ -1,17 +1,32 @@
 <template lang="">
   <div class="article">
-    <h1 class="main-title">Player Filters</h1>
-    <p>These filters allow you to show your player menu and embed them to site easily.</p>
+    <h1 class="main-title">Catalog</h1>
+    <p>Catalog object allow you to get lists of categories and programs.</p>
     <hr>
-    <h2>show_player</h2>
+    <h4>categories</h4>
     <p>
-      This filter allows you to easily load player in a page.
+      Return list of categories.
     </p>
-    <pre>
-      <code class="liquid"  v-el:liqud1>
-    {{{'{{ program | show_player }}'}}}
-      </code>
-    </pre>
+    <h4>categories_count</h4>
+    <p>
+      Return count of all categories.
+    </p>
+    <h4>featured_categories</h4>
+    <p>
+      Return list of featured categories.
+    </p>
+    <h4>featured_categories_count</h4>
+    <p>
+      Return count of featured categories.
+    </p>
+    <h4>programs</h4>
+    <p>
+      Return paginated list of programs.
+    </p>
+    <h4>programs_count</h4>
+    <p>
+      Return count of all programs.
+    </p>
   </div>
 </template>
 

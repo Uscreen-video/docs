@@ -30,6 +30,7 @@
         <li><a class='menu--link' v-link="{ path: '/catalog' }">Catalog</a></li>
         <li><a class='menu--link' v-link="{ path: '/category' }">Category</a></li>
         <li><a class='menu--link' v-link="{ path: '/search' }">Elastic Search</a></li>
+        <li><a class='menu--link' v-link="{ path: '/search-item', exact: true }">Search Item</a></li>
         <li><a class='menu--link' v-link="{ path: '/image' }">Image</a></li>
         <li><a class='menu--link' v-link="{ path: '/nav', exact: true }">Navigation</a></li>
         <li><a class='menu--link' v-link="{ path: '/nav-link' }">Navigation Link</a></li>

@@ -1,17 +1,48 @@
 <template lang="">
   <div class="article">
-    <h1 class="main-title">Player Filters</h1>
+    <h1 class="main-title">Store</h1>
     <p>These filters allow you to show your player menu and embed them to site easily.</p>
     <hr>
-    <h2>show_player</h2>
+    <h4>title</h4>
     <p>
-      This filter allows you to easily load player in a page.
+      Store title.
     </p>
-    <pre>
-      <code class="liquid"  v-el:liqud1>
-    {{{'{{ program | show_player }}'}}}
-      </code>
-    </pre>
+    <h4>currency</h4>
+    <p>
+      Store currency symbol.
+    </p>
+    <h4>logo</h4>
+    <p>
+      Store logo Image Object.
+    </p>
+    <h4>url</h4>
+    <p>
+      Store full url.
+    </p>
+    <h4>pages</h4>
+    <p>
+      Store all pages list.
+    </p>
+    <h4>offers</h4>
+    <p>
+      Store all offers list.
+    </p>
+    <h4>recurring_offers</h4>
+    <p>
+      Store recurring offers list.
+    </p>
+    <h4>fixed_price_offers</h4>
+    <p>
+      Store fixed price offers list.
+    </p>
+    <h4>freebie_offers</h4>
+    <p>
+      Store freebie offers list.
+    </p>
+    <h4>rent_offers</h4>
+    <p>
+      Store rental offers list.
+    </p>
   </div>
 </template>
 

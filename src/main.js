@@ -32,6 +32,8 @@ import StoreDrop from './pages/StoreDrop';
 import UserDrop from './pages/UserDrop';
 import SearchItemDrop from './pages/SearchItemDrop';
 import AuthorDrop from './pages/AuthorDrop';
+import SliderDrop from './pages/SliderDrop';
+import SlideDrop from './pages/SlideDrop';
 
 Vue.use(VueRouter);
 
@@ -128,6 +130,12 @@ router.map({
   },
   '/settings': {
     component: SettingsDrop,
+  },
+  '/slider': {
+    component: SliderDrop,
+  },
+  '/slide': {
+    component: SlideDrop,
   },
   '/store': {
     component: StoreDrop,

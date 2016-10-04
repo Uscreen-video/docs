@@ -40,6 +40,8 @@
         <li><a class='menu--link' v-link="{ path: '/program' }">Program</a></li>
         <li><a class='menu--link' v-link="{ path: '/request' }">Request</a></li>
         <li><a class='menu--link' v-link="{ path: '/settings' }">Settings</a></li>
+        <li><a class='menu--link' v-link="{ path: '/slider', exact: true }">Slider</a></li>
+        <li><a class='menu--link' v-link="{ path: '/slide' }">Slide</a></li>
         <li><a class='menu--link' v-link="{ path: '/store' }">Store</a></li>
         <li><a class='menu--link' v-link="{ path: '/user' }">User</a></li>
       </ul>

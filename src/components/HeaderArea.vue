@@ -1,7 +1,7 @@
 <template lang="">
   <div class="header">
     <h1>Platform Documentation</h1>
-    <p>Version: 4.0.1</p>
+    <p>Version: 4.0.2</p>
   </div>
 </template>
 
